@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+
+    android:id="@+id/mainScroll"
+    tools:context=".signUp.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/singup_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Créer un Compte"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:transitionName="transition_title_text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom"
+                android:textColorHint="@color/colorTextSecondary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorTextSecondary"
+                app:hintTextColor="@color/colorTextSecondary"
+                android:id="@+id/lastName"
+                app:startIconDrawable="@drawable/ic_nom"
+                app:startIconTint="@color/colorTextSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                   />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prenom"
+                android:textColorHint="@color/colorTextSecondary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorTextSecondary"
+                app:hintTextColor="@color/colorTextSecondary"
+                android:id="@+id/firstName"
+                app:startIconDrawable="@drawable/ic_nom"
+                app:startIconTint="@color/colorTextSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/colorTextSecondary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorTextSecondary"
+                app:hintTextColor="@color/colorTextSecondary"
+                android:id="@+id/email"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/colorTextSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date de Naissance"
+                android:textColorHint="@color/colorTextSecondary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorTextSecondary"
+                app:hintTextColor="@color/colorTextSecondary"
+                android:id="@+id/dateNaissance"
+                app:startIconDrawable="@drawable/ic_date"
+                app:startIconTint="@color/colorTextSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="date"
+                   />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/singup_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="59sp"
+            android:text="Suivant"
+            android:onClick="callNextSignUpScreen"
+            android:background="@null"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            style="?attr/materialButtonOutlinedStyle"
+            android:textStyle="bold"
+            android:elevation="5dp"
+            android:transitionName="transition_next_btn"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

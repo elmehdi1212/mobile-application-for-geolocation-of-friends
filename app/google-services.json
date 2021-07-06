@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "650060810867",
+    "project_id": "sms-verification-28084",
+    "storage_bucket": "sms-verification-28084.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650060810867:android:83af0aca729b83f3e9b806",
+        "android_client_info": {
+          "package_name": "projet.ensa.projetmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650060810867-u40j5bapk3hafqo87t3c2c04q22gd770.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "projet.ensa.projetmobile",
+            "certificate_hash": "739f36035c01fb2bd92fb3e316cc0f6e3b9e6fd4"
+          }
+        },
+        {
+          "client_id": "650060810867-m8ff82ch9tc4n9thd86adrrvjn5g6j0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxYRLz06Gx7Mf2_UxGCzHd7INp3Cypgw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650060810867-m8ff82ch9tc4n9thd86adrrvjn5g6j0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

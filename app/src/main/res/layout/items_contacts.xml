@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/symbole"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_contact"
+        android:layout_centerVertical="true"
+        android:text="ss"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:paddingTop="3dp"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/symbole"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oubari"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06123456789"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="254dp"
+        android:layout_toRightOf="@+id/layout"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addFriend"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:icon="@drawable/ic_baseline_person_add_"
+            app:iconGravity="textEnd"
+            app:strokeColor="@color/black"
+
+            />
+        <Button
+            android:id="@+id/addFriend2"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:icon="@drawable/ic_done"
+            app:iconGravity="textStart"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

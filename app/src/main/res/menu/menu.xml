@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Mes Amis"
+            android:icon="@drawable/ic_person"
+            android:id="@+id/friends"
+            />
+        <item
+            android:title="Mes demandes envoyées"
+            android:icon="@drawable/ic_person_send"
+            android:id="@+id/friendRequest"
+            />
+        <item
+            android:title="Demandes reçues"
+            android:icon="@drawable/ic_person_add"
+            android:id="@+id/demandesReçues"
+            />
+        <item
+            android:title="Map"
+            android:icon="@drawable/ic_map"
+            android:id="@+id/map"
+            />
+
+        <item
+            android:title="Chat"
+            android:icon="@drawable/ic_chat"
+            android:id="@+id/chat"
+            />
+    </group>
+    <item android:title=""
+        >
+        <menu>
+            <group android:checkableBehavior="all">
+                <item
+                    android:title="Invite Amis"
+                    android:icon="@drawable/ic_person_add"
+                    android:id="@+id/invite"
+                    />
+                <item
+                    android:title="Configuration"
+                    android:icon="@drawable/setting"
+                    android:id="@+id/configuration"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>
